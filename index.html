@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>SOLARC — Shoes Built for Movement</title>
+<meta name="description" content="SOLARC is a footwear studio crafting running, casual, sport and formal shoes designed around the natural arc of every stride.">
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@600;700;800&family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to main content</a>
+
+<!-- ===================== HEADER ===================== -->
+<header class="site-header" id="siteHeader">
+  <div class="header-inner">
+
+    <a href="#home" class="logo" aria-label="SOLARC — home">
+      <svg class="logo-mark" viewBox="0 0 60 40" aria-hidden="true">
+        <path d="M4 30 Q 10 8, 30 8 Q 50 8, 56 26 Q 40 20, 4 30 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <span class="logo-text">SOLARC</span>
+    </a>
+
+    <nav class="main-nav" id="mainNav" aria-label="Primary">
+      <ul>
+        <li><a href="#home">Home</a></li>
+        <li><a href="#shop">Shop</a></li>
+        <li><a href="#collections">Collections</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
+    <div class="header-actions">
+      <button class="cart-btn" id="cartBtn" aria-label="Open cart, 0 items" aria-haspopup="true">
+        <svg viewBox="0 0 24 24" aria-hidden="true"><path d="M6 6h15l-1.5 9h-12z" fill="none" stroke="currentColor" stroke-width="1.8"/><circle cx="9" cy="20" r="1.4" fill="currentColor"/><circle cx="18" cy="20" r="1.4" fill="currentColor"/><path d="M2 3h2l1 3" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"/></svg>
+        <span class="cart-count" id="cartCount">0</span>
+      </button>
+
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle menu" aria-expanded="false" aria-controls="mainNav">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ===================== HERO ===================== -->
+  <section class="hero" id="home">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <p class="eyebrow">The 2026 Stride Collection</p>
+        <h1>Every step<br>follows an <span>arc</span>.</h1>
+        <p class="hero-sub">SOLARC shoes are built around the natural curve of your stride — from the first push-off to the final stretch. Running, casual, sport and formal, engineered the same way: for movement.</p>
+        <div class="hero-actions">
+          <a href="#shop" class="btn btn-primary">Shop the Collection</a>
+          <a href="#about" class="btn btn-ghost">Our Craft</a>
+        </div>
+      </div>
+
+      <div class="hero-visual" aria-hidden="true">
+        <svg class="hero-shoe" viewBox="0 0 400 240" role="img" aria-label="Illustration of a running shoe">
+          <path class="shoe-sole" d="M20 190 Q 40 150, 100 140 Q 180 128, 260 150 Q 330 168, 370 150 Q 380 175, 350 195 Q 200 220, 60 210 Q 25 205, 20 190 Z"/>
+          <path class="shoe-upper" d="M50 165 Q 70 100, 150 85 Q 230 70, 290 110 Q 320 130, 330 155 Q 250 135, 170 145 Q 100 152, 50 165 Z"/>
+          <path class="shoe-lace" d="M140 108 L 175 128 M 165 98 L 200 120 M 190 90 L 225 112" fill="none"/>
+          <path class="shoe-arc" d="M20 195 Q 195 250, 380 155" fill="none"/>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CATEGORY FILTER ===================== -->
+  <section class="categories" id="collections" aria-label="Shop by category">
+    <div class="section-head">
+      <p class="eyebrow">Collections</p>
+      <h2>Built for every kind of stride</h2>
+    </div>
+
+    <div class="category-tabs" id="categoryTabs" role="tablist" aria-label="Filter products by category">
+      <button class="cat-tab is-active" role="tab" aria-selected="true" data-category="all">All</button>
+      <button class="cat-tab" role="tab" aria-selected="false" data-category="running">Running</button>
+      <button class="cat-tab" role="tab" aria-selected="false" data-category="casual">Casual</button>
+      <button class="cat-tab" role="tab" aria-selected="false" data-category="sport">Sport</button>
+      <button class="cat-tab" role="tab" aria-selected="false" data-category="formal">Formal</button>
+    </div>
+  </section>
+
+  <!-- ===================== PRODUCT GRID ===================== -->
+  <section class="shop" id="shop" aria-label="Product catalogue">
+    <div class="products-grid" id="productsGrid">
+      <!-- product cards injected by script.js -->
+    </div>
+  </section>
+
+  <!-- ===================== FEATURES ===================== -->
+  <section class="features">
+    <article class="feature">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M4 16h20l-4-6M24 16l-4 6" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h3>Free Shipping</h3>
+      <p>On every order over $75, delivered in 3–5 business days.</p>
+    </article>
+    <article class="feature">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 4 A12 12 0 1 0 26 10" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M26 4v7h-7" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h3>30-Day Returns</h3>
+      <p>Wear them, walk in them — if it's not right, send it back.</p>
+    </article>
+    <article class="feature">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><path d="M16 3l11 5v7c0 8-5 12-11 14C10 27 5 23 5 15V8z" fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M11 16l4 4 7-8" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h3>Authentic Craft</h3>
+      <p>Every pair inspected by hand before it ships to you.</p>
+    </article>
+    <article class="feature">
+      <svg viewBox="0 0 32 32" aria-hidden="true"><circle cx="16" cy="16" r="12" fill="none" stroke="currentColor" stroke-width="2"/><path d="M16 10v6l4 3" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <h3>Support Anytime</h3>
+      <p>Real people, ready to help you find the right fit.</p>
+    </article>
+  </section>
+
+  <!-- ===================== ABOUT ===================== -->
+  <section class="about" id="about">
+    <div class="about-inner">
+      <div class="about-copy">
+        <p class="eyebrow">Our Craft</p>
+        <h2>Designed around the arc of a stride, not the shape of a shelf.</h2>
+        <p>Most shoes are designed to look good standing still. SOLARC starts with the arc your foot actually makes mid-stride — the roll from heel to toe — and builds the sole, upper and lacing around that single curve. The result is a shoe that feels the same whether you're sprinting for a train or standing in line for coffee.</p>
+        <p>Founded in Lucknow and built for anywhere, SOLARC is a small team obsessed with one shape, done properly, four different ways.</p>
+      </div>
+      <div class="about-stats">
+        <div class="stat"><span class="stat-num">4</span><span class="stat-label">Collections</span></div>
+        <div class="stat"><span class="stat-num">30d</span><span class="stat-label">Return window</span></div>
+        <div class="stat"><span class="stat-num">100%</span><span class="stat-label">Hand-inspected</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== NEWSLETTER ===================== -->
+  <section class="newsletter">
+    <div class="newsletter-inner">
+      <div>
+        <h2>Get early access to new drops</h2>
+        <p>One email a month. No spam, just new arcs.</p>
+      </div>
+      <form class="newsletter-form" id="newsletterForm">
+        <label for="newsletterEmail" class="sr-only">Email address</label>
+        <input type="email" id="newsletterEmail" placeholder="you@email.com" required>
+        <button type="submit" class="btn btn-primary">Subscribe</button>
+      </form>
+      <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+    </div>
+  </section>
+
+</main>
+
+<!-- ===================== FOOTER ===================== -->
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <a href="#home" class="logo" aria-label="SOLARC — home">
+        <svg class="logo-mark" viewBox="0 0 60 40" aria-hidden="true">
+          <path d="M4 30 Q 10 8, 30 8 Q 50 8, 56 26 Q 40 20, 4 30 Z" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+        </svg>
+        <span class="logo-text">SOLARC</span>
+      </a>
+      <p>Shoes built around the arc of your stride.</p>
+    </div>
+
+    <nav class="footer-nav" aria-label="Footer">
+      <div class="footer-col">
+        <h4>Shop</h4>
+        <ul>
+          <li><a href="#shop">All Shoes</a></li>
+          <li><a href="#collections">Collections</a></li>
+          <li><a href="#about">About Us</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="tel:+918933006408">+91 89330 06408</a></li>
+          <li><a href="mailto:decodelabs.tech@gmail.com">decodelabs.tech@gmail.com</a></li>
+          <li>Greater Lucknow, India</li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Follow</h4>
+        <ul class="social-links">
+          <li><a href="#" aria-label="SOLARC on Instagram">Instagram</a></li>
+          <li><a href="#" aria-label="SOLARC on Twitter">Twitter</a></li>
+          <li><a href="#" aria-label="SOLARC on Pinterest">Pinterest</a></li>
+        </ul>
+      </div>
+    </nav>
+
+  </div>
+  <div class="footer-bottom">
+    <p>&copy; 2026 SOLARC. All rights reserved. — DecodeLabs Internship Project 1.</p>
+  </div>
+</footer>
+
+<!-- ===================== CART DRAWER ===================== -->
+<div class="cart-drawer" id="cartDrawer" aria-hidden="true" role="dialog" aria-label="Shopping cart">
+  <div class="cart-drawer-inner">
+    <div class="cart-header">
+      <h2>Your Bag</h2>
+      <button id="closeCart" aria-label="Close cart">&times;</button>
+    </div>
+    <ul class="cart-items" id="cartItems"></ul>
+    <p class="cart-empty" id="cartEmpty">Your bag is empty. Time to fix that.</p>
+    <div class="cart-footer">
+      <div class="cart-total-row">
+        <span>Total</span>
+        <span id="cartTotal">$0</span>
+      </div>
+      <button class="btn btn-primary btn-block" id="checkoutBtn">Checkout</button>
+    </div>
+  </div>
+</div>
+<div class="overlay" id="overlay"></div>
+
+<script src="script.js"></script>
+</body>
+</html>
